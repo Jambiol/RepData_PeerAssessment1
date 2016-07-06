@@ -76,14 +76,14 @@ stepsxdaytidy <- aggregate(steps ~ date, tidydata, sum)
 hist(stepsxdaytidy$steps, main="Frequency of steps per day", xlab="Steps per day", breaks = 10)
 ```
 
-We can see no differences in the shape of the graphic, but differences in the frequencies.
+*We can see no differences in the shape of the graphic, but differences in the frequencies.*
 
 ```{r}
 mean(stepsxdaytidy$steps)
 median(stepsxdaytidy$steps)
 ```
 
-We notice that both mean a median are slightly different. I changed the NA values for the rounded mean for that interval, so this negligible effect was expected.
+*We notice that both mean a median are slightly different. I changed the NA values for the rounded mean for that interval, so this negligible effect was expected.*
 
 ###Are there differences in activity patterns between weekdays and weekends?
 
