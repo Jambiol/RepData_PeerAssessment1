@@ -28,7 +28,7 @@ stepsxday <- aggregate(steps ~ date, data, sum, na.rm = TRUE)
 hist(stepsxday$steps, main="Frequency of steps per day", xlab="Steps per day", breaks = 10)
 ```
 
-![](figure/unnamed-chunk-3-1.png)<!-- -->
+![](figure/unnamed-chunk-3-1.png)
 
 - Calculate and report the mean and median of the total number of steps taken per day
 
@@ -58,7 +58,7 @@ with(stepsxinterval, plot(interval, steps, type="l", main="Average steps across 
                           xlab="Minute", ylab="Steps"))
 ```
 
-![](figure/unnamed-chunk-5-1.png)<!-- -->
+![](figure/unnamed-chunk-5-1.png)
 
 - Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -113,7 +113,7 @@ stepsxdaytidy <- aggregate(steps ~ date, tidydata, sum)
 hist(stepsxdaytidy$steps, main="Frequency of steps per day", xlab="Steps per day", breaks = 10)
 ```
 
-![](figure/unnamed-chunk-9-1.png)<!-- -->
+![](figure/unnamed-chunk-9-1.png)
 
 *We can see no differences in the shape of the graphic, but differences in the frequencies.*
 
@@ -162,4 +162,4 @@ require(lattice)
 xyplot(steps ~ interval | week, data=stepsweek, type='l')
 ```
 
-![](figure/unnamed-chunk-12-1.png)<!-- -->
+![](figure/unnamed-chunk-12-1.png)
